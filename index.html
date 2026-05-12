@@ -413,6 +413,40 @@
     grid-template-columns: 1fr;
   }
 }
+
+	  @media (max-width: 768px) {
+  nav {
+    position: fixed;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%;
+    padding: 14px 18px;
+    border-radius: 24px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav h2 {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  header {
+    padding-top: 150px;
+  }
+}
   </style>
 </head>
 
