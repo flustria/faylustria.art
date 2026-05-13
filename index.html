@@ -257,6 +257,16 @@
 	    margin-bottom: 30px;
 	  }
 
+	.commission-form select {
+	  width: 100%;
+	  padding: 14px;
+	  border-radius: 12px;
+	  border: 1px solid #d8c6b7;
+	  background: #fdf8f3;
+	  font-family: inherit;
+	  margin-bottom: 16px;
+	}
+
 
 	.form-row {
 	  display: grid;
@@ -649,12 +659,29 @@
 		>
     </div>
 
-    <input
-      type="text"
-      id="commissionType"
-      name="Commission Type"
-      readonly
-    >
+    	<select
+			  id="commissionType"
+			  name="Commission Type"
+			  required
+			>
+			  <option value="">Select a commission type</option>
+			
+			  <option value="Custom Paintings">
+			    Custom Paintings
+			  </option>
+			
+			  <option value="Gift Artwork">
+			    Gift Artwork
+			  </option>
+			
+			  <option value="Illustrations">
+			    Illustrations
+			  </option>
+			
+			  <option value="Other">
+			    Other
+			  </option>
+			</select>
 
     <textarea
       name="Description"
