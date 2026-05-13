@@ -480,17 +480,18 @@
 </head>
 
 <script>
-  function showForm(type) {
-    document.getElementById("commissionForm").style.display = "block";
-    document.getElementById("commissionType").value = type;
-    document.getElementById("formTitle").innerText = type + " Request";
-
-    document
-      .getElementById("commissionForm")
-      .scrollIntoView({ 
-		  behavior: "smooth",
-		  block: "start"
-		});
+	  function showForm(type) {
+	  document.getElementById("commissionForm").style.display = "block";
+	
+	  document.getElementById("commissionType").value = type;
+	
+	  document.getElementById("formTitle").innerText =
+	    type + " Request";
+	
+	  document.getElementById("formTitle").scrollIntoView({
+	    behavior: "smooth",
+	    block: "start"
+	  });
   }
 </script>
 
